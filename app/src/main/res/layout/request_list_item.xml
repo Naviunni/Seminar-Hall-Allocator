@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/fac_hname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="hall1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/office_middle"
+            android:layout_below="@id/fac_hname"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/fac_date"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/fac_hname"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="13sp"
+                tools:text="23/14/1233" />
+
+            <TextView
+                android:id="@+id/fac_fname"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="13sp"
+                tools:text="husni" />
+
+            <TextView
+                android:id="@+id/fac_studname"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/fac_hname"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="13sp"
+                tools:text="husni" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_below="@id/office_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/fac_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/accept" />
+
+            <Button
+                android:id="@+id/fac_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/reject" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

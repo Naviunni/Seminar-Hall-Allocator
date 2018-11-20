@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/hname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="hall1" />
+
+        <TextView
+            android:id="@+id/hdate"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/hname"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="13sp"
+            tools:text="23/14/1233" />
+
+        <TextView
+            android:id="@+id/studname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/hname"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="13sp"
+            tools:text="husni" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/studname"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="13sp"
+            tools:text="confirmed" />
+    </RelativeLayout>
+</LinearLayout>
